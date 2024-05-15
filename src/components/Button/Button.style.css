@@ -22,24 +22,9 @@
   margin: 5px 0px;
 }
 
-.container-home button {
-  width: 40%;
-  margin-top: 20px;
-  border-radius: 50px;
-}
-
-@media screen and (max-width: 700px) {
-  .container-home h2 {
-    font-size: 27px !important;
-  }
-  .container-home button {
-    font-size: 14px;
-  }
-}
-
 @media screen and (max-width: 500px) {
   .container-home h2 {
-    font-size: 20px !important;
+    font-size: 23px;
   }
 
   .container-home button {
