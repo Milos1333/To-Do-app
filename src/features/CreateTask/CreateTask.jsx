@@ -1,3 +1,5 @@
-const CreateTask = () => {};
+const CreateTask = () => {
+  return;
+};
 
 export default CreateTask;

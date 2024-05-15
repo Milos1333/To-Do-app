@@ -1,3 +1,5 @@
-const ListOfTasks = () => {};
+const ListOfTasks = () => {
+  return;
+};
 
 export default ListOfTasks;
