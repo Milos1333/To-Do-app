@@ -1,3 +1,5 @@
-const About = () => {};
+const About = () => {
+  return;
+};
 
 export default About;
