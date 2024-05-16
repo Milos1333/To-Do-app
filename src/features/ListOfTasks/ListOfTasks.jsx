@@ -1,10 +1,10 @@
-import { useTasksStore } from "../../stores/todos/todos.store";
+import { useTodosStore } from "../../stores/todos/todos.store";
 import "./ListOfTasks.style.css";
 import RenameIcon from "../../assets/RenameIcon.png";
 import DeleteIcon from "../../assets/DeleteIcon.png";
 
 const ListOfTasks = () => {
-  const { tasks, toggleTask } = useTasksStore();
+  const { tasks, toggleTask } = useTodosStore();
 
   const completedTasks = tasks.filter((task) => task.isCompleted).length;
 
