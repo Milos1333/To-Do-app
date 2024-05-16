@@ -10,12 +10,12 @@ const Navigation = () => {
       </div>
       <div className="links-container">
         <Link to={{ pathname: "/" }}>Home</Link>
-        <Link to={{ pathname: "create-task" }}>Create task</Link>
+        <Link to={{ pathname: "createtask" }}>Create task</Link>
         <div className="list-container">
-          <Link to={{ pathname: "list-of-tasks" }}>List of tasks</Link>
+          <Link to={{ pathname: "listoftasks" }}>List of tasks</Link>
           <span>0</span>
         </div>
-        <Link to={{ pathname: "about-us" }}>About us</Link>
+        <Link to={{ pathname: "about" }}>About me</Link>
       </div>
     </div>
   );

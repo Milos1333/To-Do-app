@@ -1,0 +1,178 @@
+.main-about {
+  width: 100%;
+  height: 93vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-about-page {
+  height: 420px;
+  width: 100%;
+  max-width: 700px;
+  min-width: 300px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-info {
+  padding: 0px 20px;
+  width: 38%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-info h3 {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.author-info p {
+  margin: 0;
+}
+
+.author-info img {
+  border-radius: 50%;
+  border: 2px solid red;
+}
+
+.app-info {
+  width: 52%;
+  padding: 0px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-info img {
+  margin: 15px 0 23px 0;
+}
+
+.app-info ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.app-info ul li {
+  background-color: red;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 3px 12px;
+  list-style: none;
+}
+
+.app-info p {
+  font-size: 14px;
+}
+
+.container-about-page hr {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .container-about-page {
+    height: 320px;
+  }
+  .container-about-page h2 {
+    font-size: 18px;
+  }
+
+  .author-info img {
+    width: 180px;
+  }
+
+  .app-info img {
+    width: 60px;
+    margin: 5px 0 10px 0;
+  }
+
+  .app-info ul li {
+    font-size: 8px;
+  }
+
+  .app-info p {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container-about-page {
+    flex-direction: column;
+    height: 93vh;
+    justify-content: space-evenly;
+  }
+
+  .container-about-page h2 {
+    margin-top: 0;
+  }
+
+  .container-about-page hr {
+    display: block;
+    width: 30%;
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+
+  .author-info {
+    display: flex;
+    height: 27%;
+    flex-direction: row;
+    width: 70%;
+    gap: 10px;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: end;
+    margin-top: 10px;
+  }
+
+  .author {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .author-info img {
+    width: 100px;
+  }
+
+  .author-info h2 {
+    position: absolute;
+    top: 5px;
+    font-size: 18px;
+  }
+
+  .author-info h3 {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .author-info p {
+    font-size: 12px;
+  }
+
+  .app-info {
+    width: 70%;
+    height: 40%;
+    margin-bottom: 10px;
+  }
+
+  .app-info img {
+    display: none;
+  }
+}
