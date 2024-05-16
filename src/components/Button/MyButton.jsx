@@ -3,6 +3,7 @@ import "./Button.style.css";
 const MyButton = ({ color, buttonText, handleToButton, textColor }) => {
   return (
     <button
+      className="button"
       style={{ backgroundColor: color, color: textColor }}
       onClick={handleToButton}
     >
