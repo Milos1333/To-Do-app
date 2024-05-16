@@ -1,33 +1,3 @@
-.main-home {
-  width: 100%;
-  height: 93vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.container-home {
-  width: 50%;
-  max-width: 500%;
-  min-width: 300px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container-home h2 {
-  font-size: 30px;
-  margin: 5px 0px;
-}
-
-@media screen and (max-width: 500px) {
-  .container-home h2 {
-    font-size: 23px;
-  }
-
-  .container-home button {
-    font-size: 12px;
-  }
+.button:hover {
+  background-color: rgb(226, 231, 253);
 }
