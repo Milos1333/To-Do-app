@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import IconLogo from "../../assets/megaphone.png";
 import "./Navigation.style.css";
-import { useTasksStore } from "../../stores/todos/todos.store";
+import { useTodosStore } from "../../stores/todos/todos.store";
 
 const Navigation = () => {
-  const { tasks } = useTasksStore();
+  const { tasks } = useTodosStore();
   return (
     <div className="main-navigation">
       <div className="logo-container">
