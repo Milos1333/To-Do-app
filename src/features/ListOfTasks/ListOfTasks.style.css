@@ -108,3 +108,30 @@ h2 {
 .task-item img {
   cursor: pointer;
 }
+
+@media screen and (max-width: 550px) {
+  .container-tasks {
+    width: 300px;
+  }
+  .task-head h2 {
+    font-size: 19px;
+  }
+
+  .task-head span {
+    padding: 30px;
+    font-size: 15px;
+  }
+
+  .task-item {
+    height: 55px;
+    min-height: 50px;
+  }
+
+  .task-item img {
+    width: 18px;
+  }
+
+  .task-item p {
+    font-size: 13px;
+  }
+}
