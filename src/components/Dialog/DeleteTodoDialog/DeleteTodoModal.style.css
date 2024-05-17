@@ -1,0 +1,16 @@
+.buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.buttons button:hover {
+  background-color: rgb(255, 228, 228);
+}
+
+@media screen and (max-width: 550px) {
+  .form p {
+    font-size: 13px;
+    max-width: 80%;
+    text-align: center;
+  }
+}

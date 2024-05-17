@@ -1,10 +1,10 @@
 import "./CreateTask.style.css";
-import MyButton from "../../components/Button/MyButton";
+import Button from "../../components/Button/MyButton";
 import { useState } from "react";
-import { useTodosStore } from "../../stores/todos/todos.store";
+import { useTasksStore } from "../../stores/todos/todos.store";
 
 const CreateTask = () => {
-  const { addTask } = useTodosStore();
+  const { addTask } = useTasksStore();
   const [taskText, setTaskText] = useState("");
 
   // Creating tasks
@@ -27,7 +27,7 @@ const CreateTask = () => {
           value={taskText}
           onChange={(e) => setTaskText(e.target.value)}
         />
-        <MyButton buttonText="Save task" handleToButton={handleAddTask} />
+        <Button buttonText="Save task" handleToButton={handleAddTask} />
       </div>
     </div>
   );

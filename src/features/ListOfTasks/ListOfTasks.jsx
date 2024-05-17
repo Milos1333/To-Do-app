@@ -1,10 +1,12 @@
-import { useTodosStore } from "../../stores/todos/todos.store";
+import { useTasksStore } from "../../stores/todos/todos.store";
 import "./ListOfTasks.style.css";
 import RenameIcon from "../../assets/RenameIcon.png";
 import DeleteIcon from "../../assets/DeleteIcon.png";
+import EditTodoModal from "../../components/Dialog/EditTodoDialog/EditTodoModal";
+import DeleteTodoModal from "../../components/Dialog/DeleteTodoDialog/DeleteTodoModal";
 
 const ListOfTasks = () => {
-  const { tasks, toggleTask } = useTodosStore();
+  const { tasks, toggleTask, setDialog } = useTasksStore();
 
   const completedTasks = tasks.filter((task) => task.isCompleted).length;
 
@@ -40,14 +42,26 @@ const ListOfTasks = () => {
                   </p>
                 </div>
                 <>
-                  <img src={RenameIcon} width="20px" alt="Rename icon" />
-                  <img src={DeleteIcon} width="23px" alt="Delete icon" />
+                  <img
+                    src={RenameIcon}
+                    width="20px"
+                    alt="Rename icon"
+                    onClick={() => setDialog(true, task, "edit")}
+                  />
+                  <img
+                    src={DeleteIcon}
+                    width="23px"
+                    alt="Delete icon"
+                    onClick={() => setDialog(true, task, "delete")}
+                  />
                 </>
               </div>
             ))}
           </div>
         </div>
       )}
+      <EditTodoModal />
+      <DeleteTodoModal />
     </div>
   );
 };

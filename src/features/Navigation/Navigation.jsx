@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import IconLogo from "../../assets/megaphone.png";
 import "./Navigation.style.css";
-import { useTodosStore } from "../../stores/todos/todos.store";
+import { useTasksStore } from "../../stores/todos/todos.store";
 
 const Navigation = () => {
-  const { tasks } = useTodosStore();
+  const { tasks } = useTasksStore();
   return (
     <div className="main-navigation">
       <div className="logo-container">
@@ -17,7 +17,7 @@ const Navigation = () => {
           <Link to={{ pathname: "listoftasks" }}>List of tasks</Link>
           <span>{tasks.length}</span>
         </div>
-        <Link to={{ pathname: "about" }}>About me</Link>
+        <Link to={{ pathname: "about" }}>About</Link>
       </div>
     </div>
   );
