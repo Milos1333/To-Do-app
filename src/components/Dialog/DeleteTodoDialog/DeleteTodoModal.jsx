@@ -2,17 +2,32 @@ import { Dialog, DialogTitle } from "@mui/material";
 import "./DeleteTodoModal.style.css";
 import Button from "../../Button/MyButton";
 import { useTasksStore } from "../../../stores/todos/todos.store";
+import useNotificationStore from "../../../stores/notification/notification.store";
+import { useNavigate } from "react-router-dom";
 
 const DeleteTodoModal = () => {
-  const { dialog, setDialog, deleteTask } = useTasksStore();
+  const { dialog, setDialog, deleteTask, tasks } = useTasksStore();
   const { isOpen, task, type } = dialog;
+  const { setNotification } = useNotificationStore();
+
+  const navigation = useNavigate();
+
+  const handleNavigation = () => {
+    navigation("../createtask");
+  };
 
   // Deleting tasks
 
   const handleDelete = () => {
     if (type === "delete" && task) {
       deleteTask(task.id);
+      setNotification(true, "The task was successfully deleted!", "error");
       setDialog(false, null, null);
+      if (tasks.length === 1) {
+        setTimeout(() => {
+          handleNavigation();
+        }, 1000);
+      }
     }
   };
 

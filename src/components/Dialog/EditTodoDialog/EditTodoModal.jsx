@@ -3,11 +3,13 @@ import { Dialog, DialogTitle } from "@mui/material";
 import Button from "../../Button/MyButton";
 import { useTasksStore } from "../../../stores/todos/todos.store";
 import "./EditTodoModal.style.css";
+import useNotificationStore from "../../../stores/notification/notification.store";
 
 const EditTodoModal = () => {
   const { dialog, setDialog, renameTask } = useTasksStore();
   const { isOpen, task, type } = dialog;
   const [editedTitle, setEditedTitle] = useState(task ? task.title : "");
+  const { setNotification } = useNotificationStore();
 
   useEffect(() => {
     if (task) {
@@ -21,6 +23,7 @@ const EditTodoModal = () => {
     event.preventDefault();
     if (editedTitle !== "" && task && type === "edit") {
       renameTask(task.id, { title: editedTitle });
+      setNotification(true, "Task changed successfully!", "info");
       setEditedTitle("");
       setDialog(false, null, null);
     } else {

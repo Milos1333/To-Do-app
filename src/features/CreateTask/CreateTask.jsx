@@ -2,8 +2,10 @@ import "./CreateTask.style.css";
 import Button from "../../components/Button/MyButton";
 import { useState } from "react";
 import { useTasksStore } from "../../stores/todos/todos.store";
+import useNotificationStore from "../../stores/notification/notification.store";
 
 const CreateTask = () => {
+  const { setNotification } = useNotificationStore();
   const { addTask } = useTasksStore();
   const [taskText, setTaskText] = useState("");
 
@@ -11,6 +13,7 @@ const CreateTask = () => {
 
   const handleAddTask = () => {
     if (taskText !== "") {
+      setNotification(true, "The task was successfully created!", "success");
       addTask(taskText);
       setTaskText("");
     } else {
