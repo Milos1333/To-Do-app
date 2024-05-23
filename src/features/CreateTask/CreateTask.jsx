@@ -1,4 +1,4 @@
-import "./CreateTask.style.css";
+import "./createTask.style.css";
 import Button from "../../components/Button/MyButton";
 import { useState } from "react";
 import { useTasksStore } from "../../stores/todos/todos.store";
