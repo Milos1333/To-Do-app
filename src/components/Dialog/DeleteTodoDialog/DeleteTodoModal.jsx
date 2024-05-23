@@ -1,5 +1,5 @@
 import { Dialog, DialogTitle } from "@mui/material";
-import "./DeleteTodoModal.style.css";
+import "./deleteTodoModal.style.css";
 import Button from "../../Button/MyButton";
 import { useTasksStore } from "../../../stores/todos/todos.store";
 import useNotificationStore from "../../../stores/notification/notification.store";

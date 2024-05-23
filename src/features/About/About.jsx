@@ -1,5 +1,5 @@
-import ImageOfAutor from "../../assets/IMG_4282.jpg";
-import "./About.style.css";
+import ImageOfAutor from "../../assets/img_4282.jpg";
+import "./about.style.css";
 import IconLogo from "../../assets/megaphonewhite.png";
 
 const About = () => {

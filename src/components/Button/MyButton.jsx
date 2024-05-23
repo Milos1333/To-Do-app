@@ -1,4 +1,4 @@
-import "./Button.style.css";
+import "./button.style.css";
 
 const MyButton = ({ color, buttonText, handleToButton, textColor }) => {
   return (
