@@ -1,5 +1,5 @@
-import RenameIcon from "../../../assets/renameIcon.png";
-import DeleteIcon from "../../../assets/deleteIcon.png";
+import RenameIcon from "../../../assets/RenameIcon.png";
+import DeleteIcon from "../../../assets/DeleteIcon.png";
 import { useTasksStore } from "../../../stores/todos/todos.store";
 import useNotificationStore from "../../../stores/notification/notification.store";
 
