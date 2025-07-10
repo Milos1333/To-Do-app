@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Dialog, DialogTitle } from "@mui/material";
 import Button from "../../Button/MyButton";
 import { useTasksStore } from "../../../stores/todos/todos.store";
-import "./editTodoModal.style.css";
+import "./EditTodoModal.style.css";
 import useNotificationStore from "../../../stores/notification/notification.store";
 
 const EditTodoModal = () => {

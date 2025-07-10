@@ -1,4 +1,4 @@
-import "./home.style.css";
+import "./Home.style.css";
 import Button from "../../components/Button/MyButton";
 import { useNavigate } from "react-router-dom";
 
