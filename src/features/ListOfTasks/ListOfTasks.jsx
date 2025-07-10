@@ -1,5 +1,5 @@
 import { useTasksStore } from "../../stores/todos/todos.store";
-import "./listOfTasks.style.css";
+import "./ListOfTasks.style.css";
 import EditTodoModal from "../../components/Dialog/EditTodoDialog/EditTodoModal";
 import DeleteTodoModal from "../../components/Dialog/DeleteTodoDialog/DeleteTodoModal";
 import ListHero from "./components/ListHero";

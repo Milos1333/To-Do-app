@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import IconLogo from "../../assets/megaphone.png";
-import "./navigation.style.css";
+import "./Navigation.style.css";
 import { useTasksStore } from "../../stores/todos/todos.store";
 
 const Navigation = () => {
